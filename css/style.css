@@ -10,12 +10,12 @@ a {
 
 @font-face {
 	font-family: Broadway;
-	src: url("./../../fonts/broadway.otf");
+	src: url("./../fonts/broadway.otf");
 }
 
 @font-face {
 	font-family:  Century Gothic;
-	src: url("./../../fonts/century-gothic.ttf");
+	src: url("./../fonts/century-gothic.ttf");
 }
 
 /* CABECALHO */
@@ -32,8 +32,7 @@ a {
 	width: 100%;
 	background-color: #1e2428;
 	color: white;
-	z-index: 1;
-	
+	z-index: 3;
 }
 
 .paginas {
@@ -41,7 +40,7 @@ a {
 	float: right;
 	position: relative;
 	margin-top: 2%;
-	margin-right: 50px;
+	margin-right: 6%;
 }
 
 .paginas * {
@@ -69,15 +68,40 @@ a {
 .conteudo {
 	width: 100%;
 	background-image: url("../imgs/background.png");
+	margin-top: 5.7%;
+}
+
+.titulo {
+	line-height: 2%;
+	font-size: 60px;
+}
+
+.conteudo .apresentacao .texto {
+	position: absolute;
+	z-index: 2;
+	top:  25.7%;
+	left: 10%;
+	font-family: Century Gothic;
+	font-weight: bold;
+}
+
+.apresentacao .texto p {
+	line-height: 50%;
+	font-size: 20px;
 }
 
 .conteudo .apresentacao img {
+	position: relative;
+	top:  5.7%;
+	left: auto;
+	right: 0%;
 	display:  block;
-	margin-top: ;
 	margin-left: auto;
-	margin-right: 23%;
-	height: 50%;
-	width: 50%;
+	margin-right: 0%;
+	margin-top: 0%;
+	height: 656px;
+	width: 845px;
+	z-index: 1;
 	border-radius: 50%;
 
 }
