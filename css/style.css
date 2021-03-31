@@ -1,0 +1,83 @@
+/* DEFINICOES GERAIS */
+
+body {
+	margin:  0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: Broadway;
+	src:  url("../fonts/broadway.otf");
+}
+
+@font-face {
+	font-family:  Century Gothic;
+	src:  url("../fonts/century-gothic.ttf");
+}
+
+/* CABECALHO */
+
+#logo {
+	margin-left: 3%;
+	font-size: 28px;
+	font-family: Broadway;
+}
+
+.menu {
+	position: fixed;
+	top:  0;
+	width: 100%;
+	background-color: #1e2428;
+	color: white;
+	z-index: 1;
+	
+}
+
+.paginas {
+	display: inline-block;
+	float: right;
+	position: relative;
+	margin-top: 2%;
+	margin-right: 50px;
+}
+
+.paginas * {
+	color: white;
+	font-weight: bold;
+	font-family: Century Gothic;
+	font-size: 17px;
+}
+
+.separador {
+	display: inline-block;
+	color: #dc830c;
+	font-size: 17px;
+}
+
+.menu-item {
+	display: inline-block;
+	position: relative;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+/* CONTEUDO */
+
+.conteudo {
+	width: 100%;
+	background-image: url("../imgs/background.png");
+}
+
+.conteudo .apresentacao img {
+	display:  block;
+	margin-top: ;
+	margin-left: auto;
+	margin-right: 23%;
+	height: 50%;
+	width: 50%;
+	border-radius: 50%;
+
+}
