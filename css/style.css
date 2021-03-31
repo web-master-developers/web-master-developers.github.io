@@ -10,12 +10,12 @@ a {
 
 @font-face {
 	font-family: Broadway;
-	src:  url(/fonts/broadway.otf);
+	src:  url("/fonts/broadway.otf");
 }
 
 @font-face {
 	font-family:  Century Gothic;
-	src:  url(/fonts/century-gothic.ttf);
+	src:  url("/fonts/century-gothic.ttf");
 }
 
 /* CABECALHO */
