@@ -10,12 +10,17 @@ a {
 
 @font-face {
 	font-family: Broadway;
-	src: url("./../fonts/broadway.otf");
+	src: url("./../fonts/broadway.ttf");
 }
 
 @font-face {
 	font-family:  Century Gothic;
 	src: url("./../fonts/century-gothic.ttf");
+}
+
+::--web-kit-thumb
+{
+
 }
 
 /* CABECALHO */
@@ -47,7 +52,7 @@ a {
 	color: white;
 	font-weight: bold;
 	font-family: Century Gothic;
-	font-size: 17px;
+	font-size: 24px;
 }
 
 .separador {
@@ -72,8 +77,14 @@ a {
 }
 
 .titulo {
-	line-height: 2%;
-	font-size: 60px;
+	line-height: 56.47px;
+	width: 499px;
+	/*height: 121px;*/
+	font-size: 103.33333333333333px;
+	color: #1e2428;
+	font-weight: bold;
+	font-family: Century Gothic;
+	filter: drop-shadow(1.5px 2.598px 1px rgba(0,0,0,0.2));
 }
 
 .conteudo .apresentacao .texto {
@@ -86,8 +97,8 @@ a {
 }
 
 .apresentacao .texto p {
-	line-height: 50%;
-	font-size: 20px;
+	line-height: 130%;
+	font-size: 24px;
 }
 
 .conteudo .apresentacao img {
@@ -103,5 +114,4 @@ a {
 	width: 845px;
 	z-index: 1;
 	border-radius: 50%;
-
 }
