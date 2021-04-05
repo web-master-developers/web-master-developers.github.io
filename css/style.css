@@ -3,6 +3,7 @@
 body {
 	margin:  0px;
 	width: 100%;
+	background-image: url("./../imgs/Corte.png");
 }
 
 a {
@@ -98,13 +99,13 @@ ul
 
 /* CONTEUDO */
 
-.conteudo {
-	background-image: url("./../imgs/Corte.png");
+.principal 
+{
 	margin-top: 10%;
-
 }
 
-.titulo {
+.apresentacao .titulo 
+{
 	line-height: 56.47px;
 	font-size: 70px;
 	color: #1e2428;
@@ -113,18 +114,17 @@ ul
 	filter: drop-shadow(1.5px 2.598px 1px rgba(0,0,0,0.2));
 }
 
-.conteudo .apresentacao .texto {
+.apresentacao .texto 
+{
 	float: left;
 	font-family: Century Gothic;
 	font-weight: bold;
-}
-
-.apresentacao .texto p {
 	line-height: 130%;
 	font-size: 24px;
 }
 
-.conteudo .apresentacao img {
+.apresentacao img 
+{
 	float: right;
 	display:  block;
 	margin-right: 4%;
