@@ -50,7 +50,7 @@ ul
 	position: fixed;
 	top:  0;
 	width: 100%;
-	/*height: 10%;*/
+	height: 10%;
 	background-color: #1e2428;
 }
 
@@ -76,6 +76,8 @@ ul
 {
 	color: white;
 	font-family: Century Gothic;
+	font-weight: bold;
+	font-size: 24px;
 }
 
 .logo
@@ -94,6 +96,7 @@ ul
 	/*margin-left: 2%;*/
 	font-family: Century Gothic;
 	font-weight: bold;
+	font-size:  24px;
 }
 
 
@@ -101,11 +104,24 @@ ul
 
 .principal 
 {
-	margin-top: 10%;
+	margin-left:  4%;
+	margin-top: 3%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
-.apresentacao .titulo 
+.apresentacao
 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.apresentacao .titulo
+{
+	margin-top: 40%;
+	margin-bottom: 7%;
 	line-height: 56.47px;
 	font-size: 70px;
 	color: #1e2428;
@@ -116,20 +132,52 @@ ul
 
 .apresentacao .texto 
 {
-	float: left;
 	font-family: Century Gothic;
-	font-weight: bold;
-	line-height: 130%;
-	font-size: 24px;
+	font-weight: 500;
+	line-height: 100%;
+	font-size: 22px;
 }
 
 .apresentacao img 
 {
-	float: right;
-	display:  block;
 	margin-right: 4%;
 	margin-top: 4%;
 	height: 500px;
 	width: 500px;
 	border-radius: 50%;
+}
+
+/* QUEM SOMOS */
+
+#quem-somos
+{
+	display: inline-flex;
+}
+
+/* PORTFOLIO */
+
+#portfolio
+{
+	display: inline-flex;
+}
+
+/* ORCAMENTO */
+
+#orcamento
+{
+	display: inline-flex;
+}
+
+/* CONTATO */
+
+#contato
+{
+	display: inline-flex;
+}
+
+/* RODAPE */
+
+.rodape
+{
+	display: inline-flex;
 }
