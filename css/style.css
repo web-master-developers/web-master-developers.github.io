@@ -2,6 +2,7 @@
 
 body {
 	margin:  0px;
+	width: 100%;
 }
 
 a {
@@ -18,69 +19,94 @@ a {
 	src: url("./../fonts/century-gothic.ttf");
 }
 
-::--web-kit-thumb
+ul 
+{
+	list-style: none;
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #1e2428;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: gray;
+	border-radius: 30px;
+}
+
+::-webkit-scrollbar-track
 {
 
 }
 
 /* CABECALHO */
-
-#logo {
-	margin-left: 3%;
-	font-size: 28px;
-	font-family: Broadway;
-}
-
-.menu {
+.cabecalho
+{
 	position: fixed;
 	top:  0;
 	width: 100%;
+	/*height: 10%;*/
 	background-color: #1e2428;
-	color: white;
-	z-index: 3;
 }
 
-.paginas {
+.menu
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu *
+{
 	display: inline-block;
-	float: right;
-	position: relative;
-	margin-top: 2%;
-	margin-right: 6%;
 }
 
-.paginas * {
+.paginas{
+	margin-right: 4%;
+	width: auto;
+	margin-top:  auto;
+	margin-bottom: auto;
+}
+
+.menu-item
+{
 	color: white;
-	font-weight: bold;
 	font-family: Century Gothic;
-	font-size: 24px;
 }
 
-.separador {
-	display: inline-block;
+.logo
+{
+	margin-left: 4%;
+	color: white;
+	font-family: Broadway;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.separador 
+{
 	color: #dc830c;
-	font-size: 17px;
+	/*margin-right: 2%;*/
+	/*margin-left: 2%;*/
+	font-family: Century Gothic;
+	font-weight: bold;
 }
 
-.menu-item {
-	display: inline-block;
-	position: relative;
-	margin-right: 25px;
-	margin-left: 25px;
-}
 
 /* CONTEUDO */
 
 .conteudo {
-	width: 100%;
-	background-image: url("../imgs/background.png");
-	margin-top: 5.7%;
+	background-image: url("./../imgs/Corte.png");
+	margin-top: 10%;
+
 }
 
 .titulo {
 	line-height: 56.47px;
-	width: 499px;
-	/*height: 121px;*/
-	font-size: 103.33333333333333px;
+	font-size: 70px;
 	color: #1e2428;
 	font-weight: bold;
 	font-family: Century Gothic;
@@ -88,10 +114,7 @@ a {
 }
 
 .conteudo .apresentacao .texto {
-	position: absolute;
-	z-index: 2;
-	top:  25.7%;
-	left: 10%;
+	float: left;
 	font-family: Century Gothic;
 	font-weight: bold;
 }
@@ -102,16 +125,11 @@ a {
 }
 
 .conteudo .apresentacao img {
-	position: relative;
-	top:  5.7%;
-	left: auto;
-	right: 0%;
+	float: right;
 	display:  block;
-	margin-left: auto;
-	margin-right: 0%;
-	margin-top: 0%;
-	height: 656px;
-	width: 845px;
-	z-index: 1;
+	margin-right: 4%;
+	margin-top: 4%;
+	height: 500px;
+	width: 500px;
 	border-radius: 50%;
 }
