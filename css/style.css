@@ -13,6 +13,7 @@ a {
 ul 
 {
 	list-style: none;
+	padding: 0;
 }
 
 /* FONTES */
@@ -70,45 +71,33 @@ ul
 	align-items: center;
 	justify-content: space-between;
 	height: 100%;
+	padding: 0 4%;
 }
 
-.paginas{
-	margin-right: 4%;
-	width: auto;
-	padding-left: 30px;
-}
-
-.paginas > ul
+.logo
 {
-	padding: 0;
+	color: white;
+	font-family: Broadway;
+	font-weight: bold;
+	font-size: 25px;
 }
 
-.paginas *
+.paginas > *
 {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .menu-item
 {
-	margin: auto;
 	color: white;
 	font-family: Century Gothic;
 	font-weight: 900;
 	font-size: 15px;
   	font-variant: small-caps;
   	line-height: 0.833;
-	/*padding-left: 2%;*/
-	/*padding-right: 2%;*/
-}
-
-.logo
-{
-	margin-left: 4%;
-	color: white;
-	font-family: Broadway;
-	font-weight: bold;
-	font-size: 25px;
+  	padding: 8px;
 }
 
 .separador 
@@ -117,7 +106,6 @@ ul
 	font-family: Century Gothic;
 	font-weight: bold;
 	font-size:  15px;
-	margin: 2%;
 }
 
 
