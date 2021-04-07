@@ -3,12 +3,19 @@
 body {
 	margin:  0px;
 	width: 100%;
-	background-image: url("./../imgs/Corte.png");
 }
 
 a {
 	text-decoration: none;
+	color: white;
 }
+
+ul 
+{
+	list-style: none;
+}
+
+/* FONTES */
 
 @font-face {
 	font-family: Broadway;
@@ -17,15 +24,17 @@ a {
 
 @font-face {
 	font-family:  Century Gothic;
+	font-weight: normal;
 	src: url("./../fonts/century-gothic.ttf");
 }
 
-ul 
-{
-	list-style: none;
+@font-face {
+	font-family:  Century Gothic;
+	font-weight: bold;
+	src: url("./../fonts/century-gothic-bold.ttf");
 }
 
-/* scroll bar */
+/* SCROLLBAR */
 
 ::-webkit-scrollbar
 {
@@ -45,6 +54,7 @@ ul
 }
 
 /* CABECALHO */
+
 .cabecalho
 {
 	position: fixed;
@@ -57,27 +67,39 @@ ul
 .menu
 {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-}
-
-.menu *
-{
-	display: inline-block;
+	height: 100%;
 }
 
 .paginas{
 	margin-right: 4%;
 	width: auto;
-	margin-top:  auto;
-	margin-bottom: auto;
+	padding-left: 30px;
+}
+
+.paginas > ul
+{
+	padding: 0;
+}
+
+.paginas *
+{
+	display: flex;
+	align-items: center;
 }
 
 .menu-item
 {
+	margin: auto;
 	color: white;
 	font-family: Century Gothic;
-	font-weight: bold;
-	font-size: 24px;
+	font-weight: 900;
+	font-size: 15px;
+  	font-variant: small-caps;
+  	line-height: 0.833;
+	/*padding-left: 2%;*/
+	/*padding-right: 2%;*/
 }
 
 .logo
@@ -86,17 +108,16 @@ ul
 	color: white;
 	font-family: Broadway;
 	font-weight: bold;
-	font-size: 35px;
+	font-size: 25px;
 }
 
 .separador 
 {
 	color: #dc830c;
-	/*margin-right: 2%;*/
-	/*margin-left: 2%;*/
 	font-family: Century Gothic;
 	font-weight: bold;
-	font-size:  24px;
+	font-size:  15px;
+	margin: 2%;
 }
 
 
@@ -104,46 +125,61 @@ ul
 
 .principal 
 {
-	margin-left:  4%;
-	margin-top: 3%;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
-.apresentacao
+.conteudo
 {
-	display: inline-flex;
+	margin: 2% 4%;
+	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 }
 
+/* APRESENTACAO */
+
+.apresentacao
+{
+	width: auto;	
+	background-image: url("./../imgs/Corte.png");
+}
+
 .apresentacao .titulo
 {
-	margin-top: 40%;
-	margin-bottom: 7%;
-	line-height: 56.47px;
-	font-size: 70px;
-	color: #1e2428;
-	font-weight: bold;
-	font-family: Century Gothic;
-	filter: drop-shadow(1.5px 2.598px 1px rgba(0,0,0,0.2));
+	margin-bottom: 32px;
+	font-size: 72px;
+  	font-family: Century Gothic;
+	color: rgb(30, 36, 40);
+  	font-weight: bold;
+  	line-height: 0.729;
+  	text-shadow: 0px 3px 1.7px rgba(0, 0, 0, 0.2);
+}
+
+.apresentacao span
+{
+	color:#dc830c;
 }
 
 .apresentacao .texto 
 {
-	font-family: Century Gothic;
-	font-weight: 500;
-	line-height: 100%;
-	font-size: 22px;
+	margin-top: 3%;
+	font-size: 22.5px;
+  	font-family: Century Gothic;
+  	color: rgb(30, 36, 40);
+  	line-height: 1.2;
+  	text-align: left;
+  	text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.15);
+  	width: 520px;
 }
 
-.apresentacao img 
+.apresentacao .conteudo img 
 {
-	margin-right: 4%;
 	margin-top: 4%;
-	height: 500px;
-	width: 500px;
+	height: 628.36px;
+	width: 628.36px;
 	border-radius: 50%;
 }
 
@@ -151,7 +187,8 @@ ul
 
 #quem-somos
 {
-	display: inline-flex;
+	background-image: url("./../imgs/Cafe.png");
+	height: 849px;
 }
 
 /* PORTFOLIO */
@@ -179,5 +216,10 @@ ul
 
 .rodape
 {
+	width: 100%;
+	min-height: 30px;
+	color: white;
+	background-color: black;
 	display: inline-flex;
 }
+
